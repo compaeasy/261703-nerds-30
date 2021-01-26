@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <a class="header__logo">
+      <img src="#" width="160" height="65" alt="Логотип">
+    </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="studio.html">Студия</a>
+          </li>
+          <li class="site-list__item">
+            <a href="client.html">Клиенты</a>
+          </li>
+          <li class="site-list__item">
+            <a href="shop.html">Магазин</a>
+          </li>
+          <li class="site-list__item">
+            <a href="contact.html">Контакты</a>
+          </li>
+        </ul>
+        <a class="basket" href="#">Корзина</a>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+
+  <section class="slider">
+    <img src="#" width="760" height="431" alt="Mobile">
+    <ul class="slider__list">
+      <li class="slider__item">
+        <span class="slider__slogan">Долго, дорого, скурпулезно</span>
+        <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+      </li>
+    </ul>
+    <ul class="slider-controls">
+      <li class="slider-controls__item">
+        <button type="button">Первый слайд</button>
+      </li>
+      <li class="slider-controls__item">
+        <button type="button">Второй слайд</button>
+      </li>
+      <li class="slider-controls__item">
+        <button type="button">Третий слайд</button>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<main class="page-main">
+  <section class="nerds">
+    <h1 class="visually-hidden">Нёрдс</h1>
+    <div class="nerds__wrapper advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img src="#" alt="Веб-сайты" width="300" height="146">
+          <span class="advantages__title">Веб-Сайты</span>
+          <p class="advantages__text">Мир никогда не будет прежним после того как увидит ваш сайт</p>
+          <a href="#" class="button button__order button__order--red">Заказать</a>
+        </li>
+
+        <li class="advantages__item">
+          <img src="#" alt="Приложения" width="300" height="146">
+          <span class="advantages__title">Приложения</span>
+          <p class="advantages__text">Покорите топ-10 приложений в App Store и Google Play</p>
+          <a href="#" class="button button__order button__order--green">Заказать</a>
+        </li>
+
+        <li class="advantages__item">
+          <img src="#" alt="Веб-сайты" width="300" height="146">
+          <span class="advantages__title">Презентации</span>
+          <p class="advantages__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#" class="button button__order button__order--yellow">Заказать</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nerds__wrapper description">
+      <h2 class="description__title">Мы маленькая, но гордая дизайн-студия из Краснодара</h2>
+      <p class="description__slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+        креатива. Работаем не покладая рук, как роботы.</p>
+      <h3 class="description__subtitle">Выполняем заказы на разработку:</h3>
+      <ul class="description__list">
+        <li class="description__text">
+          Веб-сайтов любой сложности
+        </li>
+        <li class="description__text">
+          Мобильных приложений для iOS и Android
+        </li>
+        <li class="description__text">
+          Слайд-шоу и видео для корпоративных презентаций
+        </li>
+      </ul>
+    </div>
+
+    <div class="nerds__wrapper statistics">
+      <img src="#" alt="Нердс" width="360" height="208">
+      <span class="statistics__title">С 2004 года любим точность во всем</span>
+      <table class="statistics__table">
+        <tr class="statistics__table-row">
+          <th>
+            146
+            <sup>%</sup>
+          </th>
+          <th>
+            100
+            <sup>%</sup>
+          </th>
+          <th>
+            50
+            <sup>%</sup>
+          </th>
+        </tr>
+        <tr class="statistics__table-row">
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="nerds__wrapper image__logo">
+      <a href="image__logo image__logo--academy">
+        <img href="#" alt="Академия" width="199" height="68">
+      </a>
+      <a href="image__logo image__logo--borodinski">
+        <img href="#" alt="Бородинский" width="209" height="90">
+      </a>
+      <a href="image__logo image__logo--pink">
+        <img href="#" alt="Пинк" width="185" height="52">
+      </a>
+      <a href="image__logo image__logo--mishka">
+        <img href="#" alt="Мишка" width="173" height="84">
+      </a>
+    </div>
+  </section>
+
+  <section class="map">
+    <h3 class="visually-hidden">Адрес</h3>
+    <adress>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</adress>
+    <div class="map__wrapper">
+      <h3 class="map__studio">NЁRDS DESIGN STUDIO</h3>
+      <p class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="map__phone">тел. +7 (812) 275-75-75</p>
+      <a href="#">Напишите нам</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer__wrapper">
+    <ul class="social footer__social">
+      <li class="social__item">
+        <a href="#" class="social__link--vkontakte"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link--facebook"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link--instagram"></a>
+      </li>
+    </ul>
+
+    <div class="footer__discount">
+      <p class="footer__title">Давайте дружить, это выгодно!</p>
+      <p class="footer__text">Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </div>
+</footer>
+
+<section class="modal">
+  <button class="modal__close" type="button" title="Закрыть">"Закрыть"</button>
+  <h2 class="modal__title">Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="modal__text">
+      <label for="login-login">Ваше имя:</label>
+      <input type="text" name="login" id="login-login" placeholder="Имя Фамилия">
+      <label for="login-email">Ваш email:</label>
+      <input type="email" name="email" id="login-email" placeholder="email@example.com">
+      <label for="login-mail">Текст письма:</label>
+      <textarea name="mail" id="login-mail" placeholder="В свободной форме"></textarea>
+    </div>
+    <button type="submit">Отправить</button>
+  </form>
+  <button type="button">Закрыть</button>
+</section>
+
+</body>
 </html>
