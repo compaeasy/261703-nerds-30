@@ -1,0 +1,197 @@
+/* variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-gray: #eeeeee;
+  --basic-cursor-gray: #dfdfdf;
+  --basic-click-gray:  #d5d5d5;
+  --basic-red: #fb565a;
+  --basic-cursor-red: #e74246;
+  --basic-click-red: #d7373b;
+  --basic-green: #00ca74;
+  --basic-cursor-green: #00bc6c;
+  --basic-click-green: #00aa62;
+  --basic-orange: #efc849;
+  --basic-cursor-orange: #eab534;
+  --basic-click-orange: #e5a722;
+}
+
+/* global */
+
+.page-body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  min-height: 100%;
+  align-content: start;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.site-list__item {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* slider */
+
+.slider__slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+/* nerds */
+
+.visually-hidden {
+  display: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+/* advantages */
+
+.advantages__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* description */
+
+.description__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.description__subtitle {
+  font-weight: 700;
+}
+
+/* statistics */
+
+.statistics__title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.statistics__table-number {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.statistics__table-percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.statistics__table-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* map */
+
+.map__studio {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.map__contacts {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.map__phone {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button__map {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+/* footer */
+
+.footer__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* modal */
+
+.modal__title {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+}
+
+.modal__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.modal__item {
+  font-weight: 700;
+}
+
+.button__modal {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+
+
+
+
