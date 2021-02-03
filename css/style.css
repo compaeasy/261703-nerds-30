@@ -39,16 +39,16 @@
   --basic-font-size: 16px;
   --medium-font-size: 18px;
   --large-font-size: 24px;
-  --percent-font-size: 26px;
-  --footer-font-size: 36px;
+  --sup-font-size: 26px;
+  --very-large-font-size: 36px;
   --big-font-size: 45px;
   --very-big-font-size: 55px;
-  --basic-line-height: 18px;
-  --footer-line-height: 22px;
-  --very-basic-line-height: 24px;
+  --small-line-height: 18px;
+  --very-small-line-height: 22px;
+  --basic-line-height: 24px;
   --medium-line-height: 30px;
   --very-medium-line-height: 36px;
-  --percent-line-height: 40px;
+  --sup-line-height: 40px;
   --large-line-height: 45px;
   --very-large-line-height: 53px;
   --big-line-height: 55px;
@@ -66,7 +66,7 @@
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: var(--basic-font-size);
-  line-height: var(--very-basic-line-height);
+  line-height: var(--basic-line-height);
   font-weight: var(--basic-font-weight);
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -121,7 +121,7 @@ img {
 
 .button {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
   font-weight: var(--medium-font-weight);
 }
 
@@ -131,6 +131,12 @@ img {
   font-size: var(--large-font-size);
   line-height: var(--medium-line-height);
   font-weight: var(--large-font-weight);
+}
+
+.advantages__text {
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
+  font-weight: var(--basic-font-weight);
 }
 
 /* description */
@@ -143,6 +149,8 @@ img {
 
 .description__subtitle {
   font-weight: var(--large-font-weight);
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
 }
 
 /* statistics */
@@ -151,7 +159,7 @@ img {
   font-weight: var(--large-font-weight);
   font-style: normal;
   font-size: var(--basic-font-size);
-  line-height: var(--very-basic-line-height);
+  line-height: var(--basic-line-height);
 }
 
 .statistics__table-number {
@@ -161,14 +169,14 @@ img {
 }
 
 .statistics__table-percent {
-  font-size: var(--percent-font-size);
-  line-height: var(--percent-line-height);
+  font-size: var(--sup-font-size);
+  line-height: var(--sup-line-height);
   font-weight: var(--large-font-weight);
 }
 
 .statistics__table-text {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
 }
 
 /* map */
@@ -181,31 +189,31 @@ img {
 
 .map__contacts {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
 }
 
 .map__phone {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
 }
 
 .button__map {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
   font-weight: var(--medium-font-weight);
 }
 
 /* footer */
 
 .footer__title {
-  font-size: var(--footer-font-size);
+  font-size: var(--very-large-font-size);
   line-height: var(--very-medium-line-height);
   font-weight: var(--large-font-weight);
 }
 
 .footer__text {
   font-size: var(--basic-font-size);
-  line-height: var(--footer-line-height);
+  line-height: var(--very-small-line-height);
 }
 
 /* modal */
@@ -218,17 +226,19 @@ img {
 
 .modal__text {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
   font-weight: var(--basic-font-weight);
 }
 
 .modal__item {
+  font-size: var(--basic-font-size);
+  line-height: var(--small-line-height);
   font-weight: var(--large-font-weight);
 }
 
 .button__modal {
   font-size: var(--basic-font-size);
-  line-height: var(--basic-line-height);
+  line-height: var(--small-line-height);
   font-weight: var(--medium-font-weight);
 }
 
