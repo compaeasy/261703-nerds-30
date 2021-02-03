@@ -36,6 +36,26 @@
   --basic-orange: #efc849;
   --basic-cursor-orange: #eab534;
   --basic-click-orange: #e5a722;
+  --basic-font-size: 16px;
+  --medium-font-size: 18px;
+  --large-font-size: 24px;
+  --percent-font-size: 26px;
+  --footer-font-size: 36px;
+  --big-font-size: 45px;
+  --very-big-font-size: 55px;
+  --basic-line-height: 18px;
+  --footer-line-height: 22px;
+  --very-basic-line-height: 24px;
+  --medium-line-height: 30px;
+  --very-medium-line-height: 36px;
+  --percent-line-height: 40px;
+  --large-line-height: 45px;
+  --very-large-line-height: 53px;
+  --big-line-height: 55px;
+  --very-big-line-height: 64px;
+  --basic-font-weight: 400;
+  --medium-font-weight: 500;
+  --large-font-weight: 700;
 }
 
 /* global */
@@ -45,9 +65,9 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-size: var(--basic-font-size);
+  line-height: var(--very-basic-line-height);
+  font-weight: var(--basic-font-weight);
   color: var(--basic-black);
   background-color: var(--basic-white);
   min-height: 100%;
@@ -77,16 +97,16 @@ img {
 /* header */
 
 .site-list__item {
-  font-size: 16px;
-  line-height: 30px;
+  font-size: var(--basic-font-size);
+  line-height: var(--medium-line-height);
 }
 
 /* slider */
 
 .slider__slogan {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
+  font-size: var(--very-big-font-size);
+  line-height: var(--big-line-height);
+  font-weight: var(--medium-font-weight);
 }
 
 .wrapper {
@@ -100,116 +120,116 @@ img {
 }
 
 .button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
+  font-weight: var(--medium-font-weight);
 }
 
 /* advantages */
 
 .advantages__title {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
+  font-size: var(--large-font-size);
+  line-height: var(--medium-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 /* description */
 
 .description__title {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
+  font-size: var(--big-font-size);
+  line-height: var(--large-line-height);
+  font-weight: var(--medium-font-weight);
 }
 
 .description__subtitle {
-  font-weight: 700;
+  font-weight: var(--large-font-weight);
 }
 
 /* statistics */
 
 .statistics__title {
-  font-weight: 700;
+  font-weight: var(--large-font-weight);
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--basic-font-size);
+  line-height: var(--very-basic-line-height);
 }
 
 .statistics__table-number {
-  font-size: 45px;
-  line-height: 64px;
-  font-weight: 700;
+  font-size: var(--big-font-size);
+  line-height: var(--very-big-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 .statistics__table-percent {
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: var(--percent-font-size);
+  line-height: var(--percent-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 .statistics__table-text {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
 }
 
 /* map */
 
 .map__studio {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+  font-size: var(--medium-font-size);
+  line-height: var(--medium-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 .map__contacts {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
 }
 
 .map__phone {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
 }
 
 .button__map {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
+  font-weight: var(--medium-font-weight);
 }
 
 /* footer */
 
 .footer__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
+  font-size: var(--footer-font-size);
+  line-height: var(--very-medium-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 .footer__text {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: var(--basic-font-size);
+  line-height: var(--footer-line-height);
 }
 
 /* modal */
 
 .modal__title {
-  font-size: 45px;
-  line-height: 53px;
-  font-weight: 700;
+  font-size: var(--big-font-size);
+  line-height: var(--very-large-line-height);
+  font-weight: var(--large-font-weight);
 }
 
 .modal__text {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
+  font-weight: var(--basic-font-weight);
 }
 
 .modal__item {
-  font-weight: 700;
+  font-weight: var(--large-font-weight);
 }
 
 .button__modal {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  font-size: var(--basic-font-size);
+  line-height: var(--basic-line-height);
+  font-weight: var(--medium-font-weight);
 }
 
 
