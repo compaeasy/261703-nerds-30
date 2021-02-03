@@ -36,26 +36,35 @@
   --basic-orange: #efc849;
   --basic-hover-orange: #eab534;
   --basic-active-orange: #e5a722;
-  --basic-font-size: 16px;
-  --medium-font-size: 18px;
-  --large-font-size: 24px;
-  --sup-font-size: 26px;
-  --very-large-font-size: 36px;
-  --big-font-size: 45px;
-  --very-big-font-size: 55px;
+
   --small-line-height: 18px;
   --very-small-line-height: 22px;
+
+  --basic-font-size: 16px;
   --basic-line-height: 24px;
-  --medium-line-height: 30px;
-  --very-medium-line-height: 36px;
-  --sup-line-height: 40px;
-  --large-line-height: 45px;
-  --very-large-line-height: 53px;
-  --big-line-height: 55px;
-  --very-big-line-height: 64px;
   --basic-font-weight: 400;
+
+  --medium-font-size: 18px;
+  --medium-line-height: 30px;
   --medium-font-weight: 500;
+
+  --very-medium-line-height: 36px;
+
+  --large-font-size: 24px;
+  --large-line-height: 45px;
   --large-font-weight: 700;
+
+  --very-large-font-size: 36px;
+  --very-large-line-height: 53px;
+
+  --big-font-size: 45px;
+  --big-line-height: 55px;
+
+  --very-big-font-size: 55px;
+  --very-big-line-height: 64px;
+
+  --sup-font-size: 26px;
+  --sup-line-height: 40px;
 }
 
 /* global */
