@@ -43,6 +43,7 @@
   --basic-font-size: 16px;
   --basic-line-height: 24px;
   --basic-font-weight: 400;
+  --basic-font-style: normal;
 
   --medium-font-size: 18px;
   --medium-line-height: 30px;
@@ -65,6 +66,7 @@
 
   --sup-font-size: 26px;
   --sup-line-height: 40px;
+
 }
 
 /* global */
@@ -166,7 +168,7 @@ img {
 
 .statistics__title {
   font-weight: var(--large-font-weight);
-  font-style: normal;
+  font-style: var(--basic-font-style);
   font-size: var(--basic-font-size);
   line-height: var(--basic-line-height);
 }
