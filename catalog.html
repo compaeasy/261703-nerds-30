@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
+<div class="wrapper">
 
 <header class="header">
   <a class="header__logo">
@@ -39,11 +40,12 @@
   </nav>
   <h1 class="head__title">Магазин готовых шаблонов</h1>
 </header>
+</div>
 
 <section class="filter-option">
   <form class="page-form">
     <fieldset class="filter-item">
-      <legend>Стоимость:</legend>
+      <legend class="filter-cost">Стоимость:</legend>
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
@@ -82,7 +84,7 @@
     </fieldset>
 
     <fieldset class="filter-features">
-      <legend class="filter-features__title">Посещенные достопримечательности:</legend>
+      <legend class="filter-features__title">Особенности:</legend>
       <ul class="filter-features__list">
         <li class="filter-features__item">
           <input checked id="slider" type="checkbox">
@@ -116,14 +118,14 @@
         </li>
       </ul>
     </fieldset>
-    <button type="submit">Показать</button>
+    <button class="button button__filter-option" type="submit">Показать</button>
   </form>
 </section>
 
 
 <div class="search-navigation">
   <div class="search-navigation__sort">
-    <p class="search-navigation__item">СОРТИРОВКА</p>
+    <p class="search-navigation__title">Сортировать</p>
   </div>
   <div class="search-navigation__link">
     <div class="search-navigation__item">
@@ -185,7 +187,7 @@
       <div class="sites__catalog--mishka">
         <h3 class="sites__title">MISHKA</h3>
         <p class="sites__text">Интернет-магазин вязаных игрушек</p>
-        <button class="product_btn">9 900 ₽</button>
+        <button class=" button product_btn">9 900 ₽</button>
       </div>
     </li>
 
@@ -229,7 +231,7 @@
     <h3 class="map__studio">NЁRDS DESIGN STUDIO</h3>
     <p class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <p class="map__phone">тел. +7 (812) 275-75-75</p>
-    <a href="#">Напишите нам</a>
+    <a class="button button__map" href="#">Напишите нам</a>
   </div>
 </section>
 </main>
@@ -260,18 +262,17 @@
   <h2 class="modal__title">Напишите нам</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="modal__text">
-      <label for="login-login">Ваше имя:</label>
+      <label class="modal__item" for="login-login">Ваше имя:</label>
       <input type="text" name="login" id="login-login" placeholder="Имя Фамилия">
-      <label for="login-email">Ваш email:</label>
+      <label class="modal__item" for="login-email">Ваш email:</label>
       <input type="email" name="email" id="login-email" placeholder="email@example.com">
-      <label for="login-mail">Текст письма:</label>
+      <label class="modal__item" for="login-mail">Текст письма:</label>
       <textarea name="mail" id="login-mail" placeholder="В свободной форме"></textarea>
     </div>
-    <button type="submit">Отправить</button>
+    <button class="button button__modal" type="submit">Отправить</button>
   </form>
   <button type="button">Закрыть</button>
 </section>
-
 </body>
 </html>
 
