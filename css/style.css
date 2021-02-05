@@ -87,8 +87,6 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
   min-height: 100%;
-  align-content: start;
-  text-align: center;
 }
 
 a {
@@ -113,6 +111,40 @@ img {
 
 /* header */
 
+.header {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  display: flex;
+}
+
+.site-list {
+  display: flex;
+}
+
+.header__logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-nav__list {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  list-style: none;
+}
+
+.site-list__item {
+
+}
+
+.user-nav {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+
+
+/* main-nav */
+
 .site-list__item {
   font-size: var(--basic-font-size);
   line-height: var(--medium-line-height);
@@ -122,6 +154,12 @@ img {
   font-size: var(--very-big-font-size);
   line-height: var(--big-line-height);
   font-weight: var(--medium-font-weight);
+}
+
+/* Grid */
+
+.page {
+  height: 100%;
 }
 
 /* slider */
@@ -162,7 +200,17 @@ img {
   font-weight: var(--basic-font-weight);
 }
 
-/* description */
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* nerds-wrapper */
+
+.description {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
 
 .description__title {
   font-size: var(--big-font-size);
@@ -177,6 +225,11 @@ img {
 }
 
 /* statistics */
+
+.statistics {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
 .statistics__title {
   font-weight: var(--large-font-weight);
@@ -200,6 +253,20 @@ img {
 .statistics__table-text {
   font-size: var(--basic-font-size);
   line-height: var(--small-line-height);
+}
+
+/* nerds-wrapper */
+
+.nerds__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* image__logo */
+
+.image__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* map */
@@ -315,6 +382,11 @@ img {
 
 /* footer */
 
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .footer__title {
   font-size: var(--very-large-font-size);
   line-height: var(--very-medium-line-height);
@@ -325,6 +397,18 @@ img {
 .footer__text {
   font-size: var(--basic-font-size);
   line-height: var(--very-small-line-height);
+}
+
+.social__item {
+  background-color: var(--basic-green);
+}
+
+.footer__social {
+  background-color: var(--basic-red);
+}
+
+.footer__discount {
+  background-color: var(--basic-red);
 }
 
 /* modal */
