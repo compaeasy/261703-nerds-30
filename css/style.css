@@ -115,6 +115,9 @@ img {
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
   display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .site-list {
@@ -164,6 +167,12 @@ img {
 
 /* slider */
 
+.slider__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .slider__slogan {
   font-size: var(--very-big-font-size);
   line-height: var(--big-line-height);
@@ -178,6 +187,12 @@ img {
 
 .visually-hidden {
   display: none;
+}
+
+.nerds__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .button {
@@ -270,6 +285,12 @@ img {
 }
 
 /* map */
+
+.map__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 
 .map__studio {
   font-size: var(--medium-font-size);
@@ -385,6 +406,9 @@ img {
 .footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .footer__title {
