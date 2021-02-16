@@ -112,8 +112,6 @@ img {
 /* header */
 
 .header {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   display: flex;
   width: 1160px;
   margin: 0 auto;
@@ -125,23 +123,38 @@ img {
 }
 
 .header__logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+
 }
 
 .main-nav__list {
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
   list-style: none;
 }
 
 .site-list__item {
-
+  padding-top: 28px;
+  text-transform: uppercase;
+  margin-right: 45px;
+  padding-bottom: 9px;
 }
+
+.site-list__item:last-child {
+  margin-right: 0;
+}
+
+.site-list {
+  padding-left: 86px;
+}
+
 
 .user-nav {
   outline: 5px solid rgba(255, 0, 255, 0.3);
   outline-offset: -5px;
+}
+
+/* container-wrapper */
+
+.container-wrapper {
+  display: grid;
 }
 
 
@@ -157,6 +170,11 @@ img {
   font-size: var(--very-big-font-size);
   line-height: var(--big-line-height);
   font-weight: var(--medium-font-weight);
+}
+
+.basket {
+  text-transform: uppercase;
+  padding-top: 28px;
 }
 
 /* Grid */
@@ -270,13 +288,6 @@ img {
   line-height: var(--small-line-height);
 }
 
-/* nerds-wrapper */
-
-.nerds__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 /* image__logo */
 
 .image__logo {
@@ -335,6 +346,13 @@ img {
   font-weight: var(--basic-font-weight);
 }
 
+/* filter-option */
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* filter-impression */
 
 .filter-impression__title {
@@ -367,6 +385,16 @@ img {
 
 /* search-navigation */
 
+.search-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-navigation__link {
+  display: flex;
+  justify-content: space-around;
+}
+
 .search-navigation__sort {
   font-size: var(--medium-font-size);
   line-height: var(--medium-line-height);
@@ -381,6 +409,11 @@ img {
 }
 
 /* sites */
+
+.sites__list {
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .sites__title {
   font-size: var(--medium-font-size);
@@ -400,6 +433,8 @@ img {
   line-height: var(--small-line-height);
   font-weight: var(--medium-font-weight);
 }
+
+
 
 /* footer */
 
