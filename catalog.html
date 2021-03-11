@@ -44,17 +44,22 @@
     <h1 class="head__title">Магазин готовых шаблонов</h1>
 </div>
 
-
+<main class="catalog-main">
 <section class="filter-option">
+  <div class="container-wrapper">
   <form class="page-form">
     <fieldset class="filter-item">
+      <legend>Стоимость:</legend>
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
-            <div class="bar"></div>
+            <div class="bar"  style="
+                width: 30%;
+                margin-left: 20%
+              "></div>
           </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+          <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+          <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
         </div>
         <div class="price-controls">
           <label class="min-price">
@@ -71,16 +76,16 @@
       <legend class="filter-impression__title">Сетка:</legend>
       <ul class="filter-impression__list">
         <li class="filter-impression__option">
-          <input type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
-          <label for=filter-adaptive>Адаптивная</label>
+          <input type="radio" class="filter__radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+          <label class="filter__label filter__label--radio" for=filter-adaptive>Адаптивная</label>
         </li>
         <li class="filter-impression__option">
-          <input type="radio" name="product-group" value="fixing" id="filter-fix">
-          <label for="filter-fix">Фиксированная</label>
+          <input type="radio" class="filter__radio" name="product-group" value="fixing" id="filter-fix">
+          <label class="filter__label filter__label--radio" for="filter-fix">Фиксированная</label>
         </li>
         <li class="filter-impression__option">
-          <input type="radio" name="product-group" value="rubber" id="filter-rubber">
-          <label for="filter-rubber">Резиновая</label>
+          <input type="radio" class="filter__radio" name="product-group" value="rubber" id="filter-rubber">
+          <label class="filter__label filter__label--radio" for="filter-rubber">Резиновая</label>
         </li>
       </ul>
     </fieldset>
@@ -89,46 +94,46 @@
       <legend class="filter-features__title">Особенности:</legend>
       <ul class="filter-features__list">
         <li class="filter-features__item">
-          <input checked id="slider" type="checkbox">
-          <label for="slider">
+          <input checked id="slider" class="filter__check" type="checkbox">
+          <label class="filter__label filter__label--check" for="slider">
             Слайдер
           </label>
         </li>
         <li class="filter-features__item">
-          <input id="advantages" type="checkbox">
-          <label for="advantages">
+          <input id="advantages" class="filter__check" type="checkbox">
+          <label class="filter__label filter__label--check" for="advantages">
             Блок преимуществ
           </label>
         </li>
         <li class="filter-features__item">
-          <input checked id="news" type="checkbox">
-          <label for="news">
+          <input checked id="news" class="filter__check" type="checkbox">
+          <label class="filter__label filter__label--check" for="news">
             Новости
           </label>
         </li>
         <li class="filter-features__item">
-          <input id="gallery" type="checkbox">
-          <label for="gallery">
+          <input id="gallery" class="filter__check" type="checkbox">
+          <label class="filter__label filter__label--check" for="gallery">
             Галерея
           </label>
         </li>
         <li class="filter-features__item">
-          <input id="basket" type="checkbox">
-          <label for="basket">
+          <input id="basket" class="filter__check" type="checkbox">
+          <label class="filter__label filter__label--check" for="basket">
             Корзина
           </label>
         </li>
       </ul>
     </fieldset>
-    <button class="button button__filter-option" type="submit">Показать</button>
+    <button class="button filter__button" type="submit">Показать</button>
   </form>
+  </div>
 </section>
 
 
+<div class="catalog-content">
 <div class="search-navigation">
-  <p class="search-navigation__title">Стоимость:</p>
   <div class="search-navigation__sort">
-
     <p class="search-navigation__title">Сортировать</p>
   </div>
   <div class="search-navigation__link">
@@ -220,13 +225,16 @@
     </li>
   </ul>
 
-  <ul class="pagination-list">
-    <li class="pagination-item pagination-item-current"><a>1</a></li>
-    <li class="pagination-item"><a href="#">2</a></li>
-    <li class="pagination-item"><a href="#">3</a></li>
-    <li class="pagination-item"><a href="#">Следующая</a></li>
+  <ul class="pagination__list">
+    <li class="pagination__item pagination__item--current"><a>1</a></li>
+    <li class="pagination__item"><a href="#">2</a></li>
+    <li class="pagination__item"><a href="#">3</a></li>
+    <li class="pagination__item"><a href="#">Следующая</a></li>
   </ul>
 </section>
+</div>
+</main>
+
 
 <section class="map">
   <h3 class="visually-hidden">Адрес</h3>
@@ -238,7 +246,7 @@
     <a class="button button__map" href="#">Напишите нам</a>
   </div>
 </section>
-</main>
+
 
 <footer>
   <div class="footer__wrapper">
