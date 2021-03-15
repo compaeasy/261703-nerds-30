@@ -23,27 +23,29 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="studio.html">Студия</a>
+            <a href="index.html" class="site-list__item-link _active">Студия</a>
           </li>
           <li class="site-list__item">
-            <a href="client.html">Клиенты</a>
+            <a href="client.html" class="site-list__item-link">Клиенты</a>
           </li>
           <li class="site-list__item">
-            <a href="shop.html">Магазин</a>
+            <a href="catalog.html" class="site-list__item-link">Магазин</a>
           </li>
           <li class="site-list__item">
-            <a href="contact.html">Контакты</a>
+            <a href="contact.html" class="site-list__item-link">Контакты</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">
+              <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z
+                M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z
+                M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z">
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </nav>
-      <a class="basket" href="#">
-        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z
-          M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z
-          M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z">
-        </svg>
-        Корзина
-      </a>
     </div>
   </header>
 
@@ -88,9 +90,6 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <main class="page-main">
     <section class="nerds">
       <h1 class="visually-hidden">Нёрдс</h1>
       <div class="advantages__wrapper advantages">
@@ -181,17 +180,37 @@
         </a>
       </div>
     </section>
-
-    <section class="map">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A30a112ff88584584d496338146856cbd3bd00f84e15491d6b0e1dccdfdb56d27&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-      <div class="map__card-contacts">
-        <h3 class="map__studio">NЁRDS DESIGN STUDIO</h3>
-        <address class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <a href="tel:+78122757575" class="map__phone">тел. +7 (812) 275-75-75</a>
-        <button type="button" class="button__map" data-modal="modal">Напишите нам</button>
-      </div>
-    </section>
   </main>
+
+  <section class="map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A30a112ff88584584d496338146856cbd3bd00f84e15491d6b0e1dccdfdb56d27&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+    <div class="map__card-contacts">
+      <h3 class="map__studio">NЁRDS DESIGN STUDIO</h3>
+      <address class="map__contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <a href="tel:+78122757575" class="map__phone">тел. +7 (812) 275-75-75</a>
+      <button type="button" class="button__map" id="open-button">Напишите нам</button>
+    </div>
+
+    <div class="modal" id="modal-contacts">
+      <div class="modal__close" id="close-button">&times;</div>
+      <h2 class="modal__title">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
+        <div class="modal__input">
+          <label class="modal__item" for="login-login">Ваше имя:</label>
+          <input type="text" name="login" id="login-login" required placeholder="Имя Фамилия" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+        </div>
+        <div class="modal__input">
+          <label class="modal__item" for="login-email">Ваш email:</label>
+          <input type="email" name="email" id="login-email" required placeholder="email@example.com">
+        </div>
+        <div class="modal__textarea">
+          <label class="modal__item" for="login-mail">Текст письма:</label>
+          <textarea name="mail" id="login-mail" required placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button__modal" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 
   <footer class="page-footer main-footer">
     <div class="footer__wrapper">
@@ -220,29 +239,8 @@
       </div>
     </div>
   </footer>
-
 </div>
 
-<section class="modal">
-  <div class="modal__close">&times;</div>
-  <h2 class="modal__title">Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
-    <div class="modal__input">
-      <label class="modal__item" for="login-login">Ваше имя:</label>
-      <input type="text" name="login" id="login-login" placeholder="Имя Фамилия">
-    </div>
-    <div class="modal__input">
-      <label class="modal__item" for="login-email">Ваш email:</label>
-      <input type="email" name="email" id="login-email" placeholder="email@example.com">
-    </div>
-    <div class="modal__textarea">
-      <label class="modal__item" for="login-mail">Текст письма:</label>
-      <textarea name="mail" id="login-mail" placeholder="В свободной форме"></textarea>
-    </div>
-    <button class="button button__modal" type="submit">Отправить</button>
-  </form>
-</section>
-
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
