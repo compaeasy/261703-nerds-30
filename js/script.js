@@ -11,12 +11,11 @@
   closeButton.onclick = function () {
     modal.style.display = "none";
   }
-  
 
-  const list = document.querySelectorAll('.site-list__item a, .basket')
+  const list = document.querySelectorAll(".site-list__item a, .main-nav__basket")
   list.forEach(item =>{ 
-         item.addEventListener('click', (e) =>{
-         list.forEach(el=>{ el.classList.remove('_active'); });
-         item.classList.add('_active')
-     })
+    item.addEventListener("click", (e) =>{
+      list.forEach(el=>{ el.classList.remove("_active"); });
+      item.classList.add("_active")
+    })
   })
