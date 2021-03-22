@@ -3,14 +3,14 @@
   var modal = document.getElementById("modal-contacts");
   var	openButton = document.getElementById("open-button");
   var closeButton = document.getElementById("close-button");
+  
+  openButton.addEventListener("click", function() {
+	  modal.classList.toggle("open");
+  });
 
-  openButton.onclick = function () {
-    modal.style.display = "block";
-  }
-
-  closeButton.onclick = function () {
-    modal.style.display = "none";
-  }
+  closeButton.addEventListener("click", function() {
+	  modal.classList.toggle("open");
+  });
 
   const list = document.querySelectorAll(".site-list__item a, .main-nav__basket")
   list.forEach(item =>{ 
@@ -19,3 +19,4 @@
       item.classList.add("_active")
     })
   })
+
